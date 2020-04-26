@@ -1,0 +1,37 @@
+
+SCENARIO: Module Verify
+META-DATA: {"description":"Recipes Test Scenario","groups":["SMOKE"]}
+	
+	@SMOKE
+	Given get '/'
+	When click on 'recipes.click '
+	And get header 'recipes.header'
+	Then verify header equal to 'RECIPES'
+	
+	
+	
+	
+	
+SCENARIO: Module Verify
+META-DATA: {"description":"Popular Test Scenario","groups":["SMOKE"]}	
+
+	@SMOKE
+	When click on 'popular.click'
+	And get header 'top.header'
+	Then verify header equal to 'Top Rated Recipes'
+	
+	
+	
+	
+	
+SCENARIO: Module Verify
+META-DATA: {"description":"Spring Test Scenario","groups":["SMOKE"]}	
+
+	@SMOKE
+	When click on 'spring.click '
+	And get header 'spring.header'
+	Then verify header equal to 'Spring'
+	
+	
+	
+END

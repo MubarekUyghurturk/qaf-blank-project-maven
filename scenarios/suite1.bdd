@@ -3,8 +3,15 @@
 SCENARIO: SampleTest
 META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"]}
 	
+	
+	
+	
 	Given get '/'
-	When search for 'qaf github infostretch'
+	When sendkeys 'Git repository QAF' to 'txt.searchbox'
+	And click on 'btn.search'
 	Then verify link with partial text 'qaf' is present
+	
 END
+
+
 

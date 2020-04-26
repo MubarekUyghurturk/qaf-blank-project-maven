@@ -1,0 +1,27 @@
+SCENARIO: Recipes Module 
+META-DATA: {"description":"Recipes Module Scenario","groups":["SMOKE"]}
+	
+	@SMOKE
+	Given get '/'
+	When click on 'recipes.click '
+	And click on dropdown 'alldropdown.click'
+	Then get text of dropdown links
+	
+	
+	
+	
+	
+	@SMOKE
+	Given get '/'
+	When click on 'recipes.click '
+	And click on Load More 'loadMore.click' button
+	Then verify load more options
+	
+	
+	
+	
+	END
+	
+	
+	
+	

@@ -25,6 +25,7 @@
 		<maven.build.timestamp.format>dd_MMM_yyyy_hh_mm_aa</maven.build.timestamp.format>
 		<testng.report.title>QAF Demo</testng.report.title>
 	</properties>
+	
 	<repositories>
 		<repository>
 			<id>qaf</id>
@@ -34,9 +35,30 @@
 			<id>jai</id>
 			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
 		</repository>
-	</repositories>
+		
+		
+  <repository>
+    <id>jcenter</id>
+    <name>bintray</name>
+    <url>https://jcenter.bintray.com</url>
+  </repository>
+</repositories>
+		
+
+	
 
 	<dependencies>
+	
+	<dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.10</version>
+  <scope>test</scope>
+</dependency>
+	
+	
+	
+	
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-remote-driver</artifactId>
